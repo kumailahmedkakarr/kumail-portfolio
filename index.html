@@ -2,94 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Kumail Ahmed - AI Developer, Frontend Developer, IT Instructor, Cybersecurity Enthusiast">
-  <meta name="keywords" content="Kumail Ahmed, AI Developer, Frontend Developer, Fiverr Developer, Cybersecurity">
-  <meta name="author" content="Kumail Ahmed">
+  <meta name="description" content="Kumail Ahmed - AI Developer, Frontend Developer, Cybersecurity Enthusiast">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kumail Ahmed | Portfolio</title>
+  <title>Kumail Ahmed | AI Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
+  <div class="logo">Kumail Ahmed</div>
   <nav>
-    <h2 class="logo">Kumail Ahmed</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section id="home" class="section hero">
-  <div class="hero-text">
-    <h1>Hi, I'm Kumail Ahmed</h1>
-    <h3>AI Developer | Frontend Developer | IT Instructor</h3>
-    <p>Creative and skilled developer with freelancing experience on Fiverr. Passionate about AI systems, modern web apps, and cybersecurity.</p>
+  <div class="left">
+    <h1>I Build AI & Modern Web Systems</h1>
+    <p>BS IT Student | AI Developer | Fiverr Freelancer | Cybersecurity Enthusiast</p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
   </div>
-  <div class="hero-img">
-    <img src="profile.jpg" alt="Kumail Ahmed">
+  <div class="right">
+    <img src="assets/profile.jpg" alt="Kumail Ahmed">
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Inflation AI</h3>
+      <p>AI-powered inflation prediction and advisory assistant using ML & RAG architecture.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>EcoMind AI</h3>
+      <p>Intelligent economic forecasting system with interactive chatbot support.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Frontend Portfolio Systems</h3>
+      <p>Responsive websites built using HTML, CSS, JavaScript & React.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <h2>Blog & Insights</h2>
+  <div class="blog-card">
+    <h3>How I Built an Inflation Prediction AI</h3>
+    <p>Explaining model selection, Prophet forecasting, RAG architecture, and deployment.</p>
+  </div>
+
+  <div class="blog-card">
+    <h3>Cybersecurity for Developers</h3>
+    <p>Lessons from Google & IBM certifications and practical implementation tips.</p>
   </div>
 </section>
 
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    I am currently pursuing BS Information Technology (4th Semester) at 
-    Balochistan University of IT, Engineering & Management Sciences (BUITEMS), Quetta.
+    I am currently pursuing BS Information Technology at BUITEMS Quetta.
+    I work as an IT Instructor and freelance developer on Fiverr.
+    My focus is AI systems, cybersecurity, and scalable web applications.
   </p>
-  <p>
-    I specialize in AI development, frontend development, and cybersecurity. 
-    I provide freelance services internationally through Fiverr with active development gigs.
-  </p>
-</section>
-
-<section id="experience" class="section">
-  <h2>Professional Experience</h2>
-
-  <div class="card">
-    <h3>IT Instructor</h3>
-    <p>Pakistan English and Computer Center</p>
-  </div>
-
-  <div class="card">
-    <h3>Freelance Developer (Fiverr)</h3>
-    <ul>
-      <li>Frontend Developer (HTML, CSS, JavaScript, React)</li>
-      <li>WordPress Website Development</li>
-      <li>Responsive Website Design</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Certifications</h3>
-    <ul>
-      <li>Cyber Security - NAVTTC</li>
-      <li>PCAP - Python Certified Associate</li>
-      <li>Google Cybersecurity Professional Certificate</li>
-      <li>IBM Cybersecurity & Penetration Testing</li>
-    </ul>
-  </div>
-
-</section>
-
-<section id="skills" class="section">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>React</div>
-    <div>Python</div>
-    <div>SQL</div>
-    <div>C++</div>
-    <div>Cybersecurity</div>
-    <div>Networking</div>
-  </div>
 </section>
 
 <section id="contact" class="section">
@@ -99,7 +82,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Kumail Ahmed | All Rights Reserved</p>
+  <p>© 2026 Kumail Ahmed</p>
 </footer>
 
 <script src="script.js"></script>
