@@ -1,20 +1,15 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
 
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 200) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(a => {
-    a.classList.remove("active");
-    if (a.getAttribute("href").includes(current)) {
-      a.classList.add("active");
+window.addEventListener("scroll", function(){
+  const cards = document.querySelectorAll(".project-card, .blog-card");
+  cards.forEach(card=>{
+    const position = card.getBoundingClientRect().top;
+    const screen = window.innerHeight;
+    if(position < screen - 100){
+      card.style.opacity="1";
+      card.style.transform="translateY(0)";
     }
   });
 });
